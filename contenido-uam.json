@@ -35,24 +35,24 @@
         "url": "https://www.autonoma.edu.co/programas"
     },
     {
-        "tema": "¿Cómo pago el certificado de matricula?",
-        "descripcion": "El certificado de matrícula tiene un costo de $23.750; puede pagarlo en línea (recomendado, entrega en 2 días hábiles) usando PSE o generando recibo, o mediante transferencia bancaria (entrega en 3-4 días hábiles) a Davivienda 25699266-0 o Bancolombia 7055009711-0; ingrese al link de pagos y recuerde que el certificado se enviará al correo institucional.",
+        "tema": "¿Cómo pago el certificado de matrícula?",
+        "descripcion": "El certificado de matrícula tiene un costo de $23.750; puede pagarlo en línea (recomendado, entrega en 2 días hábiles) usando PSE o generando recibo, o mediante transferencia bancaria (entrega en 3-4 días hábiles) a Davivienda 25699266-0 o Bancolombia 7055009711-0. Ingrese al link de pagos y recuerde que el certificado se enviará al correo institucional.",
         "url": "https://www.autonoma.edu.co/programas"
     },
     {
         "tema": "Certificados",
-        "descripcion": "Puedes realizar el proceso de inscripción en línea a través del sitio web oficial.",
+        "descripcion": "Los certificados son solicitados por la página de la universidad. Para ello, debes ingresar a la página oficial escribiendo en el buscador autonoma.edu.co. Luego aparecerá en la parte lateral derecha un ícono morado '+ Servicios'. Selecciona 'Certificado académico - Seleccionar certificado'. En tipos de certificados eliges el que requieras. Puedes revisar las plantillas antes de solicitarlo. Una vez presionado 'Solicitar certificado', digita los campos requeridos y asegúrate de que el correo que aparece sea el que tienes activo, porque allí te llegará el certificado cuando esté elaborado. ¿Lo requieres en físico, es para alguna entidad (Confa, etc.) o tienes condiciones adicionales? Si requieres algo de esto, responde 'Si'.",
         "url": "https://intrauam.autonoma.edu.co/inscripcion/"
-    },
-    {
+   },
+   {
+       "tema": "Si",
+       "descripcion": "Si requieres el certificado en físico o para ser presentado a alguna entidad como CONFA, en la casilla de información complementaria nos lo puedes hacer saber y te daremos la respuesta según corresponda. Normalmente, la elaboración y envío de certificados tarda de dos a tres días hábiles después de que el pago esté registrado en el sistema. Si lo pagas por transferencia o generas el recibo y lo pagas en un punto físico, debes subir el comprobante de pago. ¿Quieres saber sobre el valor de los certificados y cómo subir el comprobante? Responde con la palabra 'quiero' si así lo requieres.",
+       "url": "https://www.autonoma.edu.co"
+   },
+   {
         "tema": "Becas",
         "descripcion": "La Universidad Autónoma de Manizales ofrece diferentes tipos de becas: socioeconómicas, mérito académico, talento cultural o deportivo, entre otras.",
         "url": "https://www.autonoma.edu.co/apoyos/programas-de-becas"
-    },
-    {
-        "tema": "Validación de inglés",
-        "descripcion": "La validación de inglés se puede realizar mediante prueba institucional. El proceso inicia desde la coordinación del programa.",
-        "url": "https://www.autonoma.edu.co"
     },
     {
         "tema": "Recomendaciones para el proceso de inglés",
