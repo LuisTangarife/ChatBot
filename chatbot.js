@@ -199,17 +199,17 @@ function cargarGuia(tipo) {
 
   let src = "";
   switch (tipo) {
-    case "homologacion":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=880887";
+    case "Estudiante":
+      src = "https://preguntasfrecuentes.autonoma.edu.co/";
       break;
-    case "recibo":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=884120";
+    case "Docente":
+      src = "https://preguntasfrecuentes.autonoma.edu.co/";
       break;
-    case "carnets":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=915298";
+    case "Trabajador":
+      src = "https://preguntasfrecuentes.autonoma.edu.co/";
       break;
-    case "proceso":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=914964";
+    case "Comunidad Externa":
+      src = "https://preguntasfrecuentes.autonoma.edu.co/";
       break;
   }
   contenedor.innerHTML = `
