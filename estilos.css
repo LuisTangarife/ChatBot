@@ -789,3 +789,28 @@ background: radial-gradient(circle at center, #00f0ff, #002244);
   min-height: 90vh !important;
   height: 100% !important;
 }
+.quick-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.boton-rapido {
+  background-color: #0a84ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-rapido:hover {
+  background-color: #005fcc;
+}
