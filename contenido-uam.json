@@ -42,7 +42,7 @@
     {
         "tema": "Certificados",
         "descripcion": "Los certificados son solicitados por la página de la universidad. Para ello, debes ingresar a la página oficial escribiendo en el buscador autonoma.edu.co. Luego aparecerá en la parte lateral derecha un ícono morado '+ Servicios'. Selecciona 'Certificado académico - Seleccionar certificado'. En tipos de certificados eliges el que requieras. Puedes revisar las plantillas antes de solicitarlo. Una vez presionado 'Solicitar certificado', digita los campos requeridos y asegúrate de que el correo que aparece sea el que tienes activo, porque allí te llegará el certificado cuando esté elaborado. ¿Lo requieres en físico, es para alguna entidad (Confa, etc.) o tienes condiciones adicionales? Si requieres algo de esto, responde 'Si'.",
-        "url": "https://intrauam.autonoma.edu.co/inscripcion/"
+        "url": "https://intrauam.autonoma.edu.co/intrauam2/certificados/certificados/tiposCertificado"
    },
    {
        "tema": "Si",
