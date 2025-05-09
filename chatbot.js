@@ -63,25 +63,29 @@ const limpiarTexto = (texto) => {
 
 const inputLimpio = limpiarTexto(userInput);
 
+// Añadir verificación para "Si" o "quiero"
 const resultado = data.find(item =>
   inputLimpio.includes(limpiarTexto(item.tema))
 );
-    if (resultado) {
-      return `
-        <div class="bot-respuesta">
-          🤖 <strong>${resultado.tema}</strong><br>
-          ${resultado.descripcion}<br>
-          🌐 <a href="${resultado.url}" target="_blank">Ver más</a>
-        </div>
-      `;
-    } else {
-      return `
-        <div class="bot-respuesta">
-         No encontré información relacionada. Puedes preguntar por: matrícula, biblioteca, becas, certificados, etc.
-        </div>
-      `;
-    }
 
+if (resultado) {
+  let respuesta = `
+    <div class="bot-respuesta">
+      🤖 <strong>${resultado.tema}</strong><br>
+      ${resultado.descripcion}<br>
+      🌐 <a href="${resultado.url}" target="_blank">Ver más</a>
+    </div>
+  `;
+  
+  // Comprobar si la descripción tiene 'Si' o 'quiero'
+  if (resultado.descripcion.toLowerCase().includes('si') || resultado.descripcion.toLowerCase().includes('quiero')) {
+    respuesta += `
+      <div id="quick-buttons"></div> <!-- Aquí se cargarán los botones rápidos -->
+    `;
+  }
+  
+  return respuesta;
+}
   } catch (error) {
     console.error('Error al cargar contenido-uam.json:', error);
     return `
