@@ -225,4 +225,19 @@ function cerrarGuia() {
     contenedor.innerHTML = "";          // 🧼 Limpia contenido
   }, 300); // Duración de la transición en `.guia-container`
 }
+function mostrarOpcionesRapidas(opciones) {
+  const quickButtons = document.getElementById('quick-buttons');
+  quickButtons.innerHTML = ''; // Limpia botones anteriores
+
+  opciones.forEach(opcion => {
+    const button = document.createElement('button');
+    button.innerHTML = opcion.icono + ' ' + opcion.texto;
+    button.className = 'boton-rapido';
+    button.onclick = function() {
+      quickReply(opcion.texto); // O manda al flujo que tú quieras
+      quickButtons.innerHTML = ''; // Limpia botones después de seleccionar
+    };
+    quickButtons.appendChild(button);
+  });
+}
 
