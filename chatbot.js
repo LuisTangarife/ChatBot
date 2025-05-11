@@ -48,7 +48,7 @@ async function getBotResponse(userInput) {
     // 🟦 3. No encontrado
     return `
       <div class="bot-respuesta">
-        No encontré información relacionada. Puedes preguntarme por matrícula, becas, certificados, biblioteca, validaciones, etc.
+        No encontré información relacionada. Puedes preguntarme por matrícula, becas, certificados, pagos, descuentos, etc.
       </div>
     `;
 
