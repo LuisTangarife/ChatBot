@@ -1,86 +1,56 @@
-/// Función para generar la respuesta del bot usando contenido-uam.json
+// Función para generar la respuesta del bot usando contenido-uam.json con búsqueda inteligente (Fuse.js)
 async function getBotResponse(userInput) {
   try {
     const response = await fetch('contenido-uam.json');
     const data = await response.json();
 
-    const input = userInput.toLowerCase();
+    const input = userInput.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     // 🟦 1. Verificar si es un saludo
-    const saludos = ["hola", "buenas", "buenos días", "buen día", "hello", "hi", "saludos"];
+    const saludos = ["hola", "buenas", "buenos dias", "buen dia", "hello", "hi", "saludos"];
     if (saludos.some(s => input.includes(s))) {
       return `
         <div class="mensaje-bienvenida" style="line-height: 1.2; text-align: left; margin: 0; padding: 0; font-size: 15px;">
           <p style="margin: 4px 0;"><strong>👋 ¡Hola! Soy AdmiRegBot</strong>, tu asistente virtual 🤖
           <p style="margin: 4px 0;">Puedes preguntarme por:</p>
-            • 🧾 Reglamento<br>
+            • 🧾 Matrícula<br>
             • 📄 Pagos<br>
-            • ✅ Validación<br>
-            • 📘 Reglamento<br>
-            • 📥 Certificados<br>
+            • ✅ Validaciones<br>
+            • 📘 Certificados<br>
+            • 📚 Biblioteca<br>
             • ...y más.
           <p style="margin: 4px 0;">Haz clic en un botón o escribe tu duda. ¡Estoy aquí para ayudarte!</p>
         </div>
       `;
     }
-    
-    
-    
-    
 
-    // 🟦 2. Sinónimos por tema
-    const sinonimos = {
-      "matrícula": ["matricula", "inscripción", "inscribirme", "registrarme"],
-      "homologación de inglés": ["homologar inglés", "homologación", "nivelación", "reconocimiento de inglés"],
-      "validación de inglés": ["validar inglés", "validación", "examen de validación"],
-      "cancelar materia": ["retirar asignatura", "cancelar asignatura", "anular materia"],
-      "reglamento estudiantil": ["reglamento", "normas", "normativa", "manual del estudiante"],
-      "certificado académico": ["certificado", "notas", "historial académico", "boletín"],
-      "becas": ["beca", "apoyo financiero", "financiación"],
-      "biblioteca": ["libros", "lectura", "bases de datos", "prestamo"],
-      "inscripciones": ["inscribirme", "inscribirse", "nuevos estudiantes"]
-    };
+    // 🟦 2. Búsqueda inteligente con Fuse.js
+    const fuse = new Fuse(data, {
+      keys: ['tema'],
+      threshold: 0.4, // Sensibilidad de búsqueda (entre 0 y 1, 0 es exacto, 1 es muy permisivo)
+      distance: 100,
+      includeScore: true,
+    });
 
-    for (const [tema, palabras] of Object.entries(sinonimos)) {
-      if (palabras.some(p => input.includes(p))) {
-        const resultado = data.find(item => item.tema.toLowerCase() === tema.toLowerCase());
-        if (resultado) {
-          return `
-            <div class="bot-respuesta">
-              🤖 <strong>${resultado.tema}</strong><br>
-              ${resultado.descripcion}<br>
-              🌐 <a href="${resultado.url}" target="_blank">Ver más</a>
-            </div>
-          `;
-        }
-      }
-    }
+    const resultados = fuse.search(input);
 
-    // 🟦 3. Coincidencia exacta del tema (mejorada)
-const limpiarTexto = (texto) => {
-  return texto.toLowerCase().replace(/[¿?]/g, '').trim();
-};
-
-const inputLimpio = limpiarTexto(userInput);
-
-const resultado = data.find(item =>
-  inputLimpio.includes(limpiarTexto(item.tema))
-);
-    if (resultado) {
+    if (resultados.length > 0) {
+      const mejorCoincidencia = resultados[0].item;
       return `
         <div class="bot-respuesta">
-          🤖 <strong>${resultado.tema}</strong><br>
-          ${resultado.descripcion}<br>
-          🌐 <a href="${resultado.url}" target="_blank">Ver más</a>
-        </div>
-      `;
-    } else {
-      return `
-        <div class="bot-respuesta">
-         No encontré información relacionada. Puedes preguntar por: matrícula, biblioteca, becas, certificados, etc.
+          🤖 <strong>${mejorCoincidencia.tema}</strong><br>
+          ${mejorCoincidencia.descripcion}<br>
+          🌐 <a href="${mejorCoincidencia.url}" target="_blank">Ver más</a>
         </div>
       `;
     }
+
+    // 🟦 3. No encontrado
+    return `
+      <div class="bot-respuesta">
+        No encontré información relacionada. Puedes preguntarme por matrícula, becas, certificados, biblioteca, validaciones, etc.
+      </div>
+    `;
 
   } catch (error) {
     console.error('Error al cargar contenido-uam.json:', error);
@@ -91,7 +61,6 @@ const resultado = data.find(item =>
     `;
   }
 }
-
 
 // Mostrar el mensaje en pantalla y guardarlo en historial
 function appendMessage(text, sender) {
