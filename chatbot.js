@@ -13,11 +13,11 @@ async function getBotResponse(userInput) {
         <div class="mensaje-bienvenida" style="line-height: 1.2; text-align: left; margin: 0; padding: 0; font-size: 15px;">
           <p style="margin: 4px 0;"><strong>👋 ¡Hola! Soy AdmiRegBot</strong>, tu asistente virtual 🤖
           <p style="margin: 4px 0;">Puedes preguntarme por:</p>
-            • 🧾 Matrícula<br>
+            • 🧾 Recibos<br>
             • 📄 Pagos<br>
             • ✅ Validaciones<br>
             • 📘 Certificados<br>
-            • 📚 Biblioteca<br>
+            • 📚 Matrícula<br>
             • ...y más.
           <p style="margin: 4px 0;">Haz clic en un botón o escribe tu duda. ¡Estoy aquí para ayudarte!</p>
         </div>
