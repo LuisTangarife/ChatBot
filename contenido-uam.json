@@ -58,108 +58,108 @@
         "tema": "SOLICITUD DE CREDITOS POR PROMEDIO",
         "descripcion": "Para acceder a los créditos por promedio debe: pagar el total de la matrícula (Rango 18 programas diurnos, Rango 14 programas extendidos), verificar el estado de pago en IntraUAM, cumplir promedio acumulado ≥ 4.0, registrar todas las notas en el sistema, y si no se habilitan los créditos, solicitarlo en PQRSF.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "DISTRIBUCION DE CREDITOS DE DOBLE CARRERA",
         "descripcion": "Para distribuir créditos en doble carrera: pagar matrícula, cargar comprobante en la plataforma, diligenciar formulario en IntraUAM Estudiantes Doble Programa, y cumplir límites de créditos adicionales según rango.",
         "url": "https://docs.google.com/forms/d/1oIiyoThw42-IlFERBf-I1-n06NbbnAEt8coeJAfZyx8/edit"
-  },
-  {
+    },
+    {
         "tema": "SOLICITUD DE RECIBO PARA CREDITOS ADICIONALES",
         "descripcion": "Solicitar el recibo de créditos adicionales diligenciando el formulario en IntraUAM. El recibo se genera tras el pago de matrícula. Descargar recibo en IntraUAM. Consultar valores de créditos en archivo oficial.",
         "url": "https://portalconocimiento.autonoma.edu.co/?p=3558"
-  },
-  {
+    },
+    {
         "tema": "SOLICITUD DE RECIBO PARA HOMOLOGACION",
         "descripcion": "La generación del recibo de homologación debe solicitarse directamente en la oficina correspondiente.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento bachiller excelencia",
         "descripcion": "Para aplicar descuento: notas cargadas, promedio ≥ 4.2 (50%) o promedio ≥ 3.5 e inferior a 4.2 (10%), sin cancelaciones. Solicitar ajuste en PQRSF si no se aplica automáticamente.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Beneficio plan estudia y regreso U",
         "descripcion": "Beneficios de plan estudia y PRU se aplican en recibos de matrícula generados tras la aprobación. Ajustes de plazo de pago incluidos.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Municipio de Manizales",
         "descripcion": "Para aplicar descuento, presentar certificado vigente firmado por la doctora Claudia Villegas H.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento hijo de graduado",
         "descripcion": "Presentar certificado vigente de la Asociación de Graduados UAM especificando la relación y programas graduados.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Beca Fondo Patrimonial",
         "descripcion": "El descuento por Fondo Patrimonial depende de la autorización previa del Comité de Becas.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento UAM",
         "descripcion": "Aplicación requiere promedio semestral ≥ 3.5, sin cancelación de asignaturas y notas cargadas. Solicitar ajuste si no aparece.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento hermanos",
         "descripcion": "El descuento aplica solo si ambos hermanos se matriculan en el mismo periodo académico.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento egresado Colegio Autónoma",
         "descripcion": "Presentar constancia de Fundeca indicando los años cursados en el colegio Autónoma.",
         "url": ""
-  },
-  {
+    },
+    {
         "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Vamos pa' lante",
         "descripcion": "Condiciones: no perder o cancelar asignaturas, promedio ≥ 3.5, sin sanciones disciplinarias y notas cargadas. Solicitar ajuste si no aparece.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "SOLICITUD DE RECIBO DE MATRÍCULA",
         "descripcion": "Recibos para pregrado y posgrado se descargan desde IntraUAM. Si hay saldo pendiente, contactar Cartera. Instructivo disponible.",
         "url": "https://portalconocimiento.autonoma.edu.co/?p=3558"
-  },
-  {
+    },
+    {
         "tema": "SOLICITUD DE RECIBO DE MATRÍCULA POSGRADO",
         "descripcion": "Recibo de matrícula para posgrado disponible desde el segundo periodo académico. Instructivo en el portal.",
         "url": "https://portalconocimiento.autonoma.edu.co/?p=3558"
-  },
-  {
+    },
+    {
         "tema": "RECIBO PERIODO EXTENDIDO",
         "descripcion": "Notificación enviada por correo. Recibo disponible en IntraUAM tras 3 días hábiles.",
         "url": "https://portalconocimiento.autonoma.edu.co/?p=3558"
-  },
-  {
+    },
+    {
         "tema": "RECIBO REINGRESO PREGRADO",
         "descripcion": "Solicitud de reingreso debe ser autorizada por la Coordinación del programa para generar el recibo.",
         "url": "https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/pagar_matricula"
-  },
-  {
+    },
+    {
         "tema": "RECIBO REINGRESO POSGRADO",
         "descripcion": "Solicitud de reingreso debe ser autorizada por Coordinación de la Unidad de Posgrados para generar el recibo.",
         "url": "https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/pagar_matricula"
-  },
-  {
+    },
+    {
         "tema": "RECIBO DERECHOS DE GRADO",
         "descripcion": "Recibo de derechos de grado generado a través del portal de pagos UAM.",
         "url": "https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/otros_conceptos"
-  },
-  {
+    },
+    {
         "tema": "RECIBO REPITENCIA",
         "descripcion": "Solicitar recibo de repitencia a través del sistema PQRSF.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "LEGALIZACION DE MATRÍCULA ECOPETROL",
         "descripcion": "Solicitar legalización de matrícula ante Ecopetrol mediante PQRSF, categoría RECIBOS.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
-  },
-  {
+    },
+    {
         "tema": "RECIBO CANCELACION DE MATERIAS",
         "descripcion": "Recibo generado a través del portal de pagos UAM para cancelación de materias.",
         "url": "https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/otros_conceptos"
