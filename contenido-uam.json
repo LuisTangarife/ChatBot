@@ -50,8 +50,8 @@
        "url": "https://www.autonoma.edu.co"
    },
    {
-        "tema": "Becas",
-        "descripcion": "La Universidad Autónoma de Manizales ofrece diferentes tipos de becas: socioeconómicas, mérito académico, talento cultural o deportivo, entre otras.",
+        "tema": "Quiero",
+        "descripcion": "El valor del certificado depende del tipo requerido: el certificado de matrícula tiene un costo de 23.750 pesos colombianos, el certificado de notas depende del número de periodos; para un solo periodo cuesta 23.750 pesos colombianos, pero si se requieren varios periodos, se debe multiplicar este valor por la cantidad de periodos a certificar.",
         "url": "https://www.autonoma.edu.co/apoyos/programas-de-becas"
     },
     {
@@ -79,6 +79,46 @@
         "descripcion": "Debe incluir: nombre completo, documento, programa, tabla de niveles homologados con nota, mensaje de aprobación y firma de Coordinación. Debe coincidir con el listado de notas. No debe modificarse.",
         "url": "https://www.autonoma.edu.co"
     },
+    {
+        "tema": "Carga en UXXI",
+        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
+        "url": "https://www.autonoma.edu.co"
+    },
+    {
+        "tema": "Nota mínima homologación",
+        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
+        "url": "https://www.autonoma.edu.co"
+    }
+    {
+        "tema": "Carga en UXXI",
+        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
+        "url": "https://www.autonoma.edu.co"
+    },
+    {
+        "tema": "Nota mínima homologación",
+        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
+        "url": "https://www.autonoma.edu.co"
+    }
+    {
+        "tema": "Carga en UXXI",
+        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
+        "url": "https://www.autonoma.edu.co"
+    },
+    {
+        "tema": "Nota mínima homologación",
+        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
+        "url": "https://www.autonoma.edu.co"
+    }
+    {
+        "tema": "Carga en UXXI",
+        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
+        "url": "https://www.autonoma.edu.co"
+    },
+    {
+        "tema": "Nota mínima homologación",
+        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
+        "url": "https://www.autonoma.edu.co"
+    }
     {
         "tema": "Carga en UXXI",
         "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
