@@ -181,7 +181,7 @@ function cargarGuia(tipo) {
 
     case "Guia-PDF":
       contenido = `
-        <iframe src="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condiciacadmica_2.pdf" 
+        <iframe src="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condicinacadmica_2.pdf" 
                 width="100%" height="600px" style="border: none;"></iframe><br><br>
         <a href="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condiciacadmica_2.pdf" 
            download 
