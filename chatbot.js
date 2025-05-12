@@ -163,46 +163,56 @@ function hablar(textoHTML, tipo = "general") {
 }
 function cargarGuia(tipo) {
   const contenedor = document.getElementById("contenedor-guia");
-  contenedor.classList.remove("oculto"); // 👈 Ocultar con clase
-  contenedor.style.display = "block";    // 👈 Mostrar contenedor
+  contenedor.classList.remove("oculto");
+  contenedor.style.display = "block";
 
-  let src = "";
+  let contenido = "";
+
   switch (tipo) {
     case "homologacion":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=880887";
+      contenido = `
+        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=880887"
+                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+      `;
       break;
     case "recibo":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=884120";
+      contenido = `
+        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=884120"
+                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+      `;
       break;
     case "carnets":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=915298";
+      contenido = `
+        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=915298"
+                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+      `;
       break;
     case "proceso":
-      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=914964";
+      contenido = `
+        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=914964"
+                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+      `;
       break;
-  }
     case "Guia-PDF":
-          contenido = `
-            <div style="margin-bottom: 15px;">
-              <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
-                      width="100%" height="700px" style="border: none; border-radius: 8px; display: none;"></iframe>
-            </div>
-            <div style="text-align: center; margin-top: 15px;">
-              <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download"
-                 download
-                 style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-size: 16px;">
-                📥 Descargar Guía en PDF
-              </a>
-            </div>
-          `;
-          break;
-          
-        default:
-          contenido = "<p>No se encontró la guía solicitada.</p>";
-      }
-        contenedor.innerHTML = `
+      contenido = `
+        <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
+                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+        <div style="text-align: center; margin-top: 15px;">
+          <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download"
+             download
+             style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-size: 16px;">
+            📥 Descargar Guía en PDF
+          </a>
+        </div>
+      `;
+      break;
+    default:
+      contenido = "<p>No se encontró la guía solicitada.</p>";
+  }
+
+  contenedor.innerHTML = `
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
-    <iframe src="${src}" allowfullscreen title="Guía Interactiva"></iframe>
+    ${contenido}
   `;
 }
     // Mostrar iframe después de que se haya insertado
