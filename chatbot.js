@@ -181,10 +181,10 @@ function cargarGuia(tipo) {
 
     case "Guia-PDF":
       contenido = `
-        <a href="https://LuisTangarife.github.io/ChatBot/assets/docx/Condiciacadmica_2.docx" 
+        <a href="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condiciacadmica_2.pdf" 
            download 
            style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-          📥 Descargar Guía en Word (.docx)
+          📥 Descargar Guía en PDF (.pdf
         </a>
       `;
       break;
