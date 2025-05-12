@@ -163,10 +163,10 @@ function hablar(textoHTML, tipo = "general") {
 }
 function cargarGuia(tipo) {
   const contenedor = document.getElementById("contenedor-guia");
-  contenedor.classList.remove("oculto");
-  contenedor.style.display = "block";
+  contenedor.classList.remove("oculto"); // 👈 Ocultar con clase
+  contenedor.style.display = "block";    // 👈 Mostrar contenedor
 
-  let contenido = "";
+  let src = "";
 
   switch (tipo) {
     case "homologacion":
