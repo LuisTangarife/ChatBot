@@ -166,31 +166,16 @@ function cargarGuia(tipo) {
   contenedor.classList.remove("oculto"); // 👈 Ocultar con clase
   contenedor.style.display = "block";    // 👈 Mostrar contenedor
 
-  let src = "";
+  let contenido = "";
 
   switch (tipo) {
-    case "homologacion":
+    case "Estudiante":
+    case "Docente":
+    case "Trabajador":
+    case "Comunidad Externa":
       contenido = `
-        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=880887"
-                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
-      `;
-      break;
-    case "recibo":
-      contenido = `
-        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=884120"
-                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
-      `;
-      break;
-    case "carnets":
-      contenido = `
-        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=915298"
-                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
-      `;
-      break;
-    case "proceso":
-      contenido = `
-        <iframe id="iframe-guia" src="https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=914964"
-                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+        <iframe src="https://preguntasfrecuentes.autonoma.edu.co/" 
+                width="100%" height="600px" style="border: none;"></iframe>
       `;
       break;
     case "Guia-PDF":
@@ -214,25 +199,6 @@ function cargarGuia(tipo) {
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
     ${contenido}
   `;
-
-  // ✅ Mostrar iframe solo cuando esté cargado
-  setTimeout(() => {
-    const iframe = document.getElementById('iframe-guia');
-    if (iframe) {
-      iframe.onload = () => {
-        iframe.style.display = 'block';
-      };
-    }
-  }, 500); // medio segundo, solo para que cargue más fluido
-}
-    // Mostrar iframe después de que se haya insertado
-    const iframe = document.getElementById('iframe-guia');
-    if (iframe) {
-      iframe.onload = () => {
-        iframe.style.display = 'block'; // Mostrar iframe cuando esté cargado
-      };
-    }
-  }, 1000); // 1 segundo de carga ficticia
 }
 function cerrarGuia() {
   const contenedor = document.getElementById("contenedor-guia");
