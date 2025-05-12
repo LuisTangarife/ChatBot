@@ -181,9 +181,9 @@ function cargarGuia(tipo) {
 
     case "Guia-PDF":
       contenido = `
-        <iframe src="https://github.com/LuisTangarife/ChatBot/blob/4776fa41a13a283164690dda74da4d6bb14af9e2/Condicinacadmica_2.pdf" 
+        <iframe src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/view?usp=sharing" 
                 width="100%" height="600px" style="border: none;"></iframe><br><br>
-        <a href="https://github.com/LuisTangarife/ChatBot/blob/4776fa41a13a283164690dda74da4d6bb14af9e2/Condicinacadmica_2.pdf" 
+        <a href="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/view?usp=sharing" 
            download 
            style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
           📥 Descargar Guía en PDF
