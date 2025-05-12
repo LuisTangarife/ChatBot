@@ -196,7 +196,7 @@ function cargarGuia(tipo) {
     case "Guia-PDF":
       contenido = `
         <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
-                width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
+                width="100%" height="100%" style="border: none; border-radius: 8px; display: none;"></iframe>
         <div style="text-align: center; margin-top: 15px;">
           <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download"
              download
@@ -214,6 +214,16 @@ function cargarGuia(tipo) {
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
     ${contenido}
   `;
+
+  // ✅ Mostrar iframe solo cuando esté cargado
+  setTimeout(() => {
+    const iframe = document.getElementById('iframe-guia');
+    if (iframe) {
+      iframe.onload = () => {
+        iframe.style.display = 'block';
+      };
+    }
+  }, 500); // medio segundo, solo para que cargue más fluido
 }
     // Mostrar iframe después de que se haya insertado
     const iframe = document.getElementById('iframe-guia');
