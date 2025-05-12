@@ -660,13 +660,14 @@ background: radial-gradient(circle at center, #00f0ff, #002244);
 }
 
 /* 👁️ Hacer que el iframe ocupe todo el espacio del contenedor */
-/*#guia-frame {
-  /*width: 75%;
+#guia-frame {
+  width: 75%;
   height: 75%;
   border: none;
   border-radius: 8px;
   display: block; /* Asegura que el iframe ocupe toda la anchura disponible */
-  /*overflow: auto; /* Esto habilita el desplazamiento dentro del iframe */}
+  overflow: auto; /* Esto habilita el desplazamiento dentro del iframe */
+}
 
 /* ❌ Botón de cerrar guía */
 .btn-cerrar-guia {
