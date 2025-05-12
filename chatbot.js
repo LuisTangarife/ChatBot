@@ -181,10 +181,12 @@ function cargarGuia(tipo) {
 
     case "Guia-PDF":
       contenido = `
+        <iframe src="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condiciacadmica_2.pdf" 
+                width="100%" height="600px" style="border: none;"></iframe><br><br>
         <a href="https://LuisTangarife.github.io/ChatBot/assets/pdf/Condiciacadmica_2.pdf" 
            download 
            style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-          📥 Descargar Guía en PDF (.pdf
+          📥 Descargar Guía en PDF
         </a>
       `;
       break;
