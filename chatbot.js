@@ -182,9 +182,9 @@ function cargarGuia(tipo) {
       break;
          case "Guia-PDF":
       contenido = `
-        <iframe src="https://[TU_USUARIO].github.io/[TU_REPOSITORIO]/assets/pdf/guia-uam.pdf" 
+        <iframe src="https://LuisTangarife.github.io/ChatBot/assets/docx/Condiciacadmica_2.docx" 
                 width="100%" height="600px" style="border: none;"></iframe><br><br>
-        <a href="https://[TU_USUARIO].github.io/[TU_REPOSITORIO]/assets/pdf/guia-uam.pdf" 
+        <a href="https://LuisTangarife.github.io/ChatBot/assets/docx/Condiciacadmica_2.docx" 
            download 
            style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
           📥 Descargar Guía en PDF
