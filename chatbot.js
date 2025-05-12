@@ -165,14 +165,6 @@ function cargarGuia(tipo) {
   const contenedor = document.getElementById("contenedor-guia");
   contenedor.classList.remove("oculto");
   contenedor.style.display = "block";
-
-  // Mostrar loader mientras se carga
-  contenedor.innerHTML = `
-    <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
-    <div id="loader" style="text-align:center; margin-top:50px;">
-      <p style="font-size: 18px;">⏳ Cargando guía, por favor espera...</p>
-      <div class="spinner"></div>
-    </div>
   `;
 
   let contenido = "";
@@ -206,9 +198,6 @@ case "Guia-PDF":
     default:
       contenido = "<p>No se encontró la guía solicitada.</p>";
   }
-
-  // Agregar un pequeño retraso para simular carga y luego mostrar contenido real
-  setTimeout(() => {
     contenedor.innerHTML = `
       <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
       ${contenido}
