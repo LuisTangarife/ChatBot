@@ -201,10 +201,10 @@ function cargarGuia(tipo) {
           contenido = "<p>No se encontró la guía solicitada.</p>";
       }
         contenedor.innerHTML = `
-          <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
-          ${contenido}
-        `;
-
+    <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
+    <iframe src="${src}" allowfullscreen title="Guía Interactiva"></iframe>
+  `;
+}
     // Mostrar iframe después de que se haya insertado
     const iframe = document.getElementById('iframe-guia');
     if (iframe) {
