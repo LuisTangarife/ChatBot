@@ -166,8 +166,16 @@ function cargarGuia(tipo) {
   contenedor.classList.remove("oculto");
   contenedor.style.display = "block";
 
-  let contenido = "";
+  // Mostrar loader mientras se carga
+  contenedor.innerHTML = `
+    <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
+    <div id="loader" style="text-align:center; margin-top:50px;">
+      <p style="font-size: 18px;">⏳ Cargando guía, por favor espera...</p>
+      <div class="spinner"></div>
+    </div>
+  `;
 
+  let contenido = "";
   switch (tipo) {
     case "Estudiante":
     case "Docente":
@@ -179,14 +187,14 @@ function cargarGuia(tipo) {
       `;
       break;
 
-     case "Guia-PDF":
+case "Guia-PDF":
       contenido = `
         <div style="margin-bottom: 15px;">
-          <iframe src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview" 
-                  width="100%" height="600px" style="border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"></iframe>
+          <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
+                  width="100%" height="700px" style="border: none; border-radius: 8px; display: none;"></iframe>
         </div>
         <div style="text-align: center; margin-top: 15px;">
-          <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download" 
+          <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download"
              download
              style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-size: 16px;">
             📥 Descargar Guía en PDF
@@ -194,15 +202,26 @@ function cargarGuia(tipo) {
         </div>
       `;
       break;
-
+      
     default:
       contenido = "<p>No se encontró la guía solicitada.</p>";
   }
 
-  contenedor.innerHTML = `
-    <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
-    ${contenido}
-  `;
+  // Agregar un pequeño retraso para simular carga y luego mostrar contenido real
+  setTimeout(() => {
+    contenedor.innerHTML = `
+      <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
+      ${contenido}
+    `;
+
+    // Mostrar iframe después de que se haya insertado
+    const iframe = document.getElementById('iframe-guia');
+    if (iframe) {
+      iframe.onload = () => {
+        iframe.style.display = 'block'; // Mostrar iframe cuando esté cargado
+      };
+    }
+  }, 1000); // 1 segundo de carga ficticia
 }
 function cerrarGuia() {
   const contenedor = document.getElementById("contenedor-guia");
