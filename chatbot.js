@@ -191,7 +191,7 @@ case "Guia-PDF":
       contenido = `
         <div style="margin-bottom: 15px;">
           <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
-                  style="border: none; border-radius: 8px; display: none;"></iframe>
+                  width="100%" height="700px" style="border: none; border-radius: 8px; display: none;"></iframe>
         </div>
         <div style="text-align: center; margin-top: 15px;">
           <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download"
