@@ -163,22 +163,24 @@ function hablar(textoHTML, tipo = "general") {
 }
 function cargarGuia(tipo) {
   const contenedor = document.getElementById("contenedor-guia");
-  contenedor.classList.remove("oculto");
-  contenedor.style.display = "block";
-  `;
+  contenedor.classList.remove("oculto"); // 👈 Ocultar con clase
+  contenedor.style.display = "block";    // 👈 Mostrar contenedor
 
-  let contenido = "";
+  let src = "";
   switch (tipo) {
-    case "Estudiante":
-    case "Docente":
-    case "Trabajador":
-    case "Comunidad Externa":
-      contenido = `
-        <iframe src="https://preguntasfrecuentes.autonoma.edu.co/" 
-                width="100%" height="600px" style="border: none;"></iframe>
-      `;
+    case "homologacion":
+      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=880887";
       break;
-
+    case "recibo":
+      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=884120";
+      break;
+    case "carnets":
+      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=915298";
+      break;
+    case "proceso":
+      src = "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/embed.php?id=914964";
+      break;
+  }
     case "Guia-PDF":
           contenido = `
             <div style="margin-bottom: 15px;">
