@@ -180,6 +180,20 @@ function cargarGuia(tipo) {
     case "Comunidad Externa":
       src = "https://preguntasfrecuentes.autonoma.edu.co/";
       break;
+         case "Guia-PDF":
+      contenido = `
+        <iframe src="https://[TU_USUARIO].github.io/[TU_REPOSITORIO]/assets/pdf/guia-uam.pdf" 
+                width="100%" height="600px" style="border: none;"></iframe><br><br>
+        <a href="https://[TU_USUARIO].github.io/[TU_REPOSITORIO]/assets/pdf/guia-uam.pdf" 
+           download 
+           style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
+          📥 Descargar Guía en PDF
+        </a>
+      `;
+      break;
+
+    default:
+      contenido = "<p>No se encontró la guía solicitada.</p>";
   }
   contenedor.innerHTML = `
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
