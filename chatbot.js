@@ -179,15 +179,19 @@ function cargarGuia(tipo) {
       `;
       break;
 
-    case "Guia-PDF":
+     case "Guia-PDF":
       contenido = `
-        <iframe src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview" 
-                width="100%" height="600px" style="border: none;"></iframe><br><br>
-        <a href="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview" 
-           download 
-           style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-          📥 Descargar Guía en PDF
-        </a>
+        <div style="margin-bottom: 15px;">
+          <iframe src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview" 
+                  width="100%" height="600px" style="border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);"></iframe>
+        </div>
+        <div style="text-align: center; margin-top: 15px;">
+          <a href="https://drive.google.com/uc?id=14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ&export=download" 
+             download
+             style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; font-size: 16px;">
+            📥 Descargar Guía en PDF
+          </a>
+        </div>
       `;
       break;
 
