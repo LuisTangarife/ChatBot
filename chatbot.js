@@ -163,31 +163,28 @@ function hablar(textoHTML, tipo = "general") {
 }
 function cargarGuia(tipo) {
   const contenedor = document.getElementById("contenedor-guia");
-  contenedor.classList.remove("oculto"); // 👈 Ocultar con clase
-  contenedor.style.display = "block";    // 👈 Mostrar contenedor
+  contenedor.classList.remove("oculto");
+  contenedor.style.display = "block";
 
-  let src = "";
+  let contenido = "";
+
   switch (tipo) {
     case "Estudiante":
-      src = "https://preguntasfrecuentes.autonoma.edu.co/";
-      break;
     case "Docente":
-      src = "https://preguntasfrecuentes.autonoma.edu.co/";
-      break;
     case "Trabajador":
-      src = "https://preguntasfrecuentes.autonoma.edu.co/";
-      break;
     case "Comunidad Externa":
-      src = "https://preguntasfrecuentes.autonoma.edu.co/";
-      break;
-         case "Guia-PDF":
       contenido = `
-        <iframe src="https://LuisTangarife.github.io/ChatBot/assets/docx/Condiciacadmica_2.docx" 
-                width="100%" height="600px" style="border: none;"></iframe><br><br>
+        <iframe src="https://preguntasfrecuentes.autonoma.edu.co/" 
+                width="100%" height="600px" style="border: none;"></iframe>
+      `;
+      break;
+
+    case "Guia-PDF":
+      contenido = `
         <a href="https://LuisTangarife.github.io/ChatBot/assets/docx/Condiciacadmica_2.docx" 
            download 
            style="background: #4CAF50; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">
-          📥 Descargar Guía en PDF
+          📥 Descargar Guía en Word (.docx)
         </a>
       `;
       break;
@@ -195,9 +192,10 @@ function cargarGuia(tipo) {
     default:
       contenido = "<p>No se encontró la guía solicitada.</p>";
   }
+
   contenedor.innerHTML = `
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
-    <iframe src="${src}" allowfullscreen title="Guía Interactiva"></iframe>
+    ${contenido}
   `;
 }
 function cerrarGuia() {
