@@ -75,47 +75,47 @@
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento bachiller excelencia",
+        "tema": "Descuento bachiller excelencia",
         "descripcion": "Para aplicar descuento: notas cargadas, promedio ≥ 4.2 (50%) o promedio ≥ 3.5 e inferior a 4.2 (10%), sin cancelaciones. Solicitar ajuste en PQRSF si no se aplica automáticamente.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Beneficio plan estudia y regreso U",
+        "tema": "Beneficio plan estudia y regreso U",
         "descripcion": "Beneficios de plan estudia y PRU se aplican en recibos de matrícula generados tras la aprobación. Ajustes de plazo de pago incluidos.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Municipio de Manizales",
+        "tema": "Descuento Municipio de Manizales",
         "descripcion": "Para aplicar descuento, presentar certificado vigente firmado por la doctora Claudia Villegas H.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento hijo de graduado",
+        "tema": "Descuento hijo de graduado",
         "descripcion": "Presentar certificado vigente de la Asociación de Graduados UAM especificando la relación y programas graduados.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Beca Fondo Patrimonial",
+        "tema": "Descuento Beca Fondo Patrimonial",
         "descripcion": "El descuento por Fondo Patrimonial depende de la autorización previa del Comité de Becas.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento UAM",
+        "tema": "Descuento UAM",
         "descripcion": "Aplicación requiere promedio semestral ≥ 3.5, sin cancelación de asignaturas y notas cargadas. Solicitar ajuste si no aparece.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento hermanos",
+        "tema": "Descuento hermanos",
         "descripcion": "El descuento aplica solo si ambos hermanos se matriculan en el mismo periodo académico.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento egresado Colegio Autónoma",
+        "tema": "Descuento egresado Colegio Autónoma",
         "descripcion": "Presentar constancia de Fundeca indicando los años cursados en el colegio Autónoma.",
         "url": ""
     },
     {
-        "tema": "CORRECCION DEL RECIBO DE MATRÍCULA - Descuento Vamos pa' lante",
+        "tema": "Descuento Vamos pa' lante",
         "descripcion": "Condiciones: no perder o cancelar asignaturas, promedio ≥ 3.5, sin sanciones disciplinarias y notas cargadas. Solicitar ajuste si no aparece.",
         "url": "https://sgd.autonoma.edu.co/pqrsf/create"
     },
@@ -165,78 +165,13 @@
         "url": "https://intrauam.autonoma.edu.co/ponline/pagosEnLinea/informacion/page/view/otros_conceptos"
     },
     {
-        "tema": "Recomendaciones para el proceso de inglés",
-        "descripcion": "📄 Proceso de Homologación de Inglés\n\nPara facilitar el proceso de homologación, ten en cuenta estas recomendaciones:\n\n🔍 Revisión de Solicitudes:\n- Verifica detalladamente la documentación presentada por los estudiantes.\n- Usa herramientas como Drive y Hojas de cálculo siguiendo el protocolo establecido.\n\n🏫 Instituto de Idiomas:\n- Gestiona el proceso de aprobación.\n- Es responsable del contacto directo con los estudiantes.\n\n✅ Validación de Documentos:\n- Revisa y aprueba los documentos enviados por los estudiantes.\n- Luego se genera la carta de aprobación.\n\n📌 Condiciones para Aprobación:\n- El estudiante no debe tener inscritos los niveles que desea homologar en el período actual.\n\n📄 Contenido de la Carta de Aprobación:\n- Nombre completo, documento de identidad y programa académico.\n- Tabla con niveles de inglés homologados y sus notas.\n- Firma de la Coordinadora del Instituto de Idiomas.\n\n📧 Envío y Registro:\n- La carta se envía al estudiante y queda guardada en el Drive institucional.\n\n📊 Listado de Notas y Recibos:\n- Disponible en Google Drive (marcador \"Hojas de cálculo\").\n- Contiene los estudiantes aprobados por el Instituto de Idiomas.",
-        "url": "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/view.php?id=880887"
-    },
-    {
-        "tema": "Homologación de inglés",
-        "descripcion": "Para cargar homologación de inglés, se debe presentar solicitud con la carta de aprobación emitida por el instituto de idiomas. El proceso inicia en la Mesa de Servicio.",
-        "url": "https://webgrid.autonoma.edu.co/uamvirtual/mod/hvp/view.php?id=880887"
-    },
-    {
         "tema": "Biblioteca",
         "descripcion": "La Universidad Autónoma de Manizales cuenta con una biblioteca moderna, acceso a bases de datos científicas, libros físicos y digitales.",
         "url": "https://www.autonoma.edu.co/biblioteca"
     },
     {
-        "tema": "Pasos para homologación",
-        "descripcion": "1️⃣ Verifica en el Listado de Notas del Drive los datos del estudiante. 2️⃣ Revisa que no tenga niveles inscritos. 3️⃣ Consulta 'Mis Pagos' con el documento. 4️⃣ Carga en UXXI desde: Expedientes → Convalidaciones → Manual. 5️⃣ Nota mínima: 3.5 externa, 3.0 interna. 6️⃣ Marca el listado en verde.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Requisitos para carta de homologación",
-        "descripcion": "Debe incluir: nombre completo, documento, programa, tabla de niveles homologados con nota, mensaje de aprobación y firma de Coordinación. Debe coincidir con el listado de notas. No debe modificarse.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Carga en UXXI",
-        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
         "tema": "Nota mínima homologación",
         "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
         "url": "https://www.autonoma.edu.co"
     },
-    {
-        "tema": "Carga en UXXI",
-        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Nota mínima homologación",
-        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Carga en UXXI",
-        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Nota mínima homologación",
-        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Carga en UXXI",
-        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Nota mínima homologación",
-        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Carga en UXXI",
-        "descripcion": "Ve a Expedientes > Convalidaciones > Manual. Ingresa documento del estudiante. Selecciona tipo: C (Convalidación), universidad: 1825, asignatura: (ej. 151601), estado: Aprobado, nota: AP + calificación.",
-        "url": "https://www.autonoma.edu.co"
-    },
-    {
-        "tema": "Nota mínima homologación",
-        "descripcion": "Interna: 3.0 | Externa: 3.5 | Reingreso: 3.2. Verifica que la nota esté en el listado y coincida con la carta antes de cargar en sistema.",
-        "url": "https://www.autonoma.edu.co"
-    }
 ]
