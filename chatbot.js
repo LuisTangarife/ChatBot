@@ -1,4 +1,4 @@
-/ Función para generar la respuesta del bot usando contenido-uam.json con búsqueda inteligente (Fuse.js)
+// Función para generar la respuesta del bot usando contenido-uam.json con búsqueda inteligente (Fuse.js)
 async function getBotResponse(userInput) {
   try {
     const response = await fetch('contenido-uam.json');
