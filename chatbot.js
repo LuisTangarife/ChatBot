@@ -35,14 +35,15 @@ async function getBotResponse(userInput) {
     const resultados = fuse.search(input);
 
     if (resultados.length > 0) {
-      const mejorCoincidencia = resultados[0].item;
-      return `
-        <div class="bot-respuesta">
-          🤖 <strong>${mejorCoincidencia.tema}</strong><br>
-          ${mejorCoincidencia.descripcion}<br>
-          🌐 <a href="${mejorCoincidencia.url}" target="_blank">Ver más</a>
-        </div>
-      `;
+  let respuestas = resultados.slice(0, 3).map(r => `
+    <div class="bot-respuesta">
+      🤖 <strong>${r.item.tema}</strong><br>
+      ${r.item.descripcion}<br>
+      🌐 <a href="${r.item.url}" target="_blank">Ver más</a>
+    </div>
+  `).join("");
+  return respuestas;
+},
     }
 
     // 🟦 3. No encontrado
