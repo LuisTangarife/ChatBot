@@ -223,3 +223,5 @@ function mostrarOpcionesRapidas(opciones) {
     quickButtons.appendChild(button);
   });
 }
+}
+
