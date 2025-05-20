@@ -828,3 +828,17 @@ background: radial-gradient(circle at center, #00f0ff, #002244);
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+.chat-container {
+  animation: fadeInUp 0.7s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
