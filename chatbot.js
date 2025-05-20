@@ -1,4 +1,4 @@
-// Función para generar la respuesta del bot usando contenido-uam.json con búsqueda inteligente (Fuse.js)
+/ Función para generar la respuesta del bot usando contenido-uam.json con búsqueda inteligente (Fuse.js)
 async function getBotResponse(userInput) {
   try {
     const response = await fetch('contenido-uam.json');
@@ -9,7 +9,7 @@ async function getBotResponse(userInput) {
     // 🟦 1. Verificar si es un saludo
     const saludos = ["hola", "buenas", "buenos dias", "buen dia", "hello", "hi", "saludos"];
     if (saludos.some(s => input.includes(s))) {
-      return `
+      return 
         <div class="mensaje-bienvenida" style="line-height: 1.2; text-align: left; margin: 0; padding: 0; font-size: 15px;">
           <p style="margin: 4px 0;"><strong>👋 ¡Hola! Soy AdmiRegBot</strong>, tu asistente virtual 🤖
           <p style="margin: 4px 0;">Puedes preguntarme por:</p>
@@ -21,7 +21,7 @@ async function getBotResponse(userInput) {
             • ...y más.
           <p style="margin: 4px 0;">Haz clic en un botón o escribe tu duda. ¡Estoy aquí para ayudarte!</p>
         </div>
-      `;
+      ;
     }
 
     // 🟦 2. Búsqueda inteligente con Fuse.js
@@ -35,31 +35,30 @@ async function getBotResponse(userInput) {
     const resultados = fuse.search(input);
 
     if (resultados.length > 0) {
-  let respuestas = resultados.slice(0, 3).map(r => `
-    <div class="bot-respuesta">
-      🤖 <strong>${r.item.tema}</strong><br>
-      ${r.item.descripcion}<br>
-      🌐 <a href="${r.item.url}" target="_blank">Ver más</a>
-    </div>
-  `).join("");
-  return respuestas;
-},
+      const mejorCoincidencia = resultados[0].item;
+      return 
+        <div class="bot-respuesta">
+          🤖 <strong>${mejorCoincidencia.tema}</strong><br>
+          ${mejorCoincidencia.descripcion}<br>
+          🌐 <a href="${mejorCoincidencia.url}" target="_blank">Ver más</a>
+        </div>
+      ;
     }
 
     // 🟦 3. No encontrado
-    return `
+    return 
       <div class="bot-respuesta">
         No encontré información relacionada. Puedes preguntarme por matrícula, becas, certificados, pagos, descuentos, etc.
       </div>
-    `;
+    ;
 
   } catch (error) {
     console.error('Error al cargar contenido-uam.json:', error);
-    return `
+    return 
       <div class="bot-respuesta">
         Ocurrió un error al consultar la base de datos del bot.
       </div>
-    `;
+    ;
   }
 }
 
@@ -174,13 +173,13 @@ function cargarGuia(tipo) {
     case "Docente":
     case "Trabajador":
     case "Comunidad Externa":
-      contenido = `
+      contenido = 
         <iframe src="https://preguntasfrecuentes.autonoma.edu.co/" 
                 width="100%" height="600px" style="border: none;"></iframe>
-      `;
+      ;
       break;
     case "Guia-PDF":
-      contenido = `
+      contenido = 
         <iframe id="iframe-guia" src="https://drive.google.com/file/d/14GchJym8nlvHIlmGp-jz_PxpB1ywfLvJ/preview"
                 width="100%" height="100%" style="border: none; border-radius: 8px;"></iframe>
         <div style="text-align: center; margin-top: 15px;">
@@ -190,16 +189,16 @@ function cargarGuia(tipo) {
             📥 Descargar Guía en PDF
           </a>
         </div>
-      `;
+      ;
       break;
     default:
       contenido = "<p>No se encontró la guía solicitada.</p>";
   }
 
-  contenedor.innerHTML = `
+  contenedor.innerHTML = 
     <button class="btn-cerrar-guia" onclick="cerrarGuia()">❌</button>
     ${contenido}
-  `;
+  ;
 }
 function cerrarGuia() {
   const contenedor = document.getElementById("contenedor-guia");
@@ -207,7 +206,7 @@ function cerrarGuia() {
   setTimeout(() => {
     contenedor.style.display = "none";  // 👈 Oculta después de transición
     contenedor.innerHTML = "";          // 🧼 Limpia contenido
-  }, 300); // Duración de la transición en `.guia-container`
+  }, 300); // Duración de la transición en .guia-container
 }
 function mostrarOpcionesRapidas(opciones) {
   const quickButtons = document.getElementById('quick-buttons');
@@ -224,5 +223,3 @@ function mostrarOpcionesRapidas(opciones) {
     quickButtons.appendChild(button);
   });
 }
-
-
